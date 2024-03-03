@@ -6,31 +6,59 @@
   margin: 0%;
 }
 body {
-  background-image: url(/Images/slide1.jpg);
+  color: white;  
+  
+  min-height: 150vh;
 }
-body::after {
-  opacity: 50%;
+ul{
+    list-style-type: none;
+    text-align: left;
+    padding: 0%;
 }
 h1 {
-  font-family: Trebuchet MS, fantasy;
+  font-family: Gill Sans, fantasy;
   font-weight: 500;
   font-size: 50px;
+  text-align: center;
   text-transform: uppercase;
 }
 h2 {
-  font-family: Trebuchet MS, fantasy;
+  font-family: Gill Sans, fantasy;
   font-weight: 500;
   font-size: 30px;
+  text-align: center;
   text-transform: uppercase;
 }
-nav {
+h5{
+    font-size: 12.5px;
+}
+h5:hover a:hover{
+    text-decoration: underline;
+    text-decoration: #0078be;
+}
+nav{
   display: inline-flex;
   background-color: transparent;
-  position: sticky;
-  padding: 10px;
+  margin-top: 0%;
   width: 100%;
 }
-button {
+a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  padding: 5px;
+  border: 10px;
+}
+a:hover {
+  background-color: rgb(255, 255, 255, 10%);
+}
+.nav-buttons {
+  width: 100%;
+  display: flex;
+  margin-right: 6%;
+  align-items: center;
+}
+.nav-button {
   font-family: Trebuchet MS, sans-serif;
   font-size: 14.4px;
   font-weight: bold;
@@ -43,7 +71,7 @@ button {
   background-color: transparent;
   color: white;
 }
-button:hover {
+.nav-button:hover {
   background-color: rgb(255, 255, 255, 10%);
   color: white;
 }
@@ -53,47 +81,133 @@ button:hover {
   margin-left: 60px;
   padding: 5px;
 }
-.nav-buttons {
-  width: 100%;
-  display: flex;
-  margin-right: 6%;
-  align-items: center;
-}
-.login {
+.login-button {
+  background-color: #0078be;
   border-radius: 20px;
+  font-family: Trebuchet MS, sans-serif;
+  font-size: 14.4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  align-items: center;
+  height: min-content;
+  padding: 10px;
+  margin: 10px;
+  border-color: transparent;
+  color: white;
 }
-
+.cycle-img {
+    position: fixed;
+    margin-top: 0%;
+    z-index: -3;
+    filter: brightness(75%);
+}
+.title {
+    margin-bottom: 25%;
+    padding-top: 20%;
+}
 .card {
   background-image: url(/Images/bg-icon.png);
-  border-radius: 10px;
-  color: black;
-  text-align: center;
+  border-radius: 10px;  
+  height: max-content;
 }
 .card:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .card-header {
+  color: black;
+  font-size: medium;
+  font-weight: bolder;
+  width: 60%;
+  text-align: center;
+  align-items: center;
 }
 .card-body {
-  width: 50%;
+  width: 60%;
+  color: black;
   text-align: center;
-  align-self: center;
+  align-items: center;
+  align-content: center;
+  margin-left: 10%;
+}
+.red-hover {
+  border-radius: 10px;
+  text-align: center;
+}
+.red-hover:hover {
+  background-color: #f6e1e7;
+}
+.green-hover {
+  border-radius: 10px;
+  text-align: center;
+}
+.green-hover:hover {
+  background-color: #ecefdc;
+}
+.aqua-hover {
+  border-radius: 10px;
+  text-align: center;
+}
+.aqua-hover:hover {
+  background-color: #dce9e0;
+}
+.teal-hover {
+  border-radius: 10px;
+  text-align: center;
+}
+.teal-hover:hover {
+  background-color: #dcebec;
+}
+.blue-hover {
+  border-radius: 10px;
+  text-align: center;
+}
+.blue-hover:hover {
+  background-color: #dce8f0;
 }
 .explore-img {
   background-image: url(/Images/Shared-Space-at-BDD.png);
   text-align: center;
+  width: 100%;
+}
+.hub-img{
+    background-image: url(/Images/parallax-light.jpg);
+  text-align: center;
+  width: 100%;
 }
 .bg-img {
   width: 90%;
 }
+.item{
+    height: 20%;
+    align-content: center;
+}
+.foot{
+    color: white;
+    text-indent: 20px;
+    width: fit-content;
+}
+.scroll{
+    display: inline-flex;
+  background-color: rgb(0, 0, 0,10%);
+  position: fixed;
+  padding: 10px;
+  margin-top: 0%;
+  width: 100%;
+}
 .off-white {
   background-color: #f5f5f5;
+  width: 100%;
 }
 .white {
   background-color: #ffff;
+  width: 100%;
+}
+.black {
+  color: black;
 }
 .dark {
   background-color: #212121;
+  align-content: right; 
 }
 .gray-text {
   color: #646464;
@@ -102,14 +216,17 @@ button:hover {
   color: #b6b6b6;
 }
 .float-container {
-  margin: 50px;
   display: flex;
 }
 .float-child {
   display: flex;
-  width: 100%;
+  width: 99%;
+  padding: 5px;;
   flex-direction: row;
   align-items: center;
+}
+.flex-space-around {    
+  justify-content: space-around;
 }
 .flex-space-evenly {
   justify-content: space-evenly;
@@ -117,3 +234,14 @@ button:hover {
 .flex-end {
   justify-content: end;
 }
+.flex-start {
+  justify-content: start;
+}
+.hidden{
+    display: none;
+}
+.padding-4l{
+    padding-left: 20px;
+}
+
+
