@@ -6,14 +6,14 @@
   margin: 0%;
 }
 body {
-  color: white;  
-  
+  color: white;
+
   min-height: 150vh;
 }
-ul{
-    list-style-type: none;
-    text-align: left;
-    padding: 0%;
+ul {
+  list-style-type: none;
+  text-align: left;
+  padding: 0%;
 }
 h1 {
   font-family: Gill Sans, fantasy;
@@ -29,14 +29,14 @@ h2 {
   text-align: center;
   text-transform: uppercase;
 }
-h5{
-    font-size: 12.5px;
+h5 {
+  font-size: 12.5px;
 }
-h5:hover a:hover{
-    text-decoration: underline;
-    text-decoration: #0078be;
+h5:hover a:hover {
+  text-decoration: underline;
+  text-decoration: #0078be;
 }
-nav{
+nav {
   display: inline-flex;
   background-color: transparent;
   margin-top: 0%;
@@ -96,28 +96,30 @@ a:hover {
   color: white;
 }
 .cycle-img {
-    position: fixed;
-    margin-top: 0%;
-    z-index: -3;
-    filter: brightness(75%);
+  position: fixed;
+  margin-top: 0%;
+  z-index: -3;
+  filter: brightness(75%);
 }
 .title {
-    margin-bottom: 25%;
-    padding-top: 20%;
+  margin-bottom: 25%;
+  padding-top: 20%;
 }
 .card {
   background-image: url(/Images/bg-icon.png);
-  border-radius: 10px;  
-  height: max-content;
+  border-radius: 10px;
+  height: 330px; /* or whatever width you want. */
+  max-height: 330px;
+  width: 60%;
 }
 .card:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .card-header {
   color: black;
-  font-size: medium;
-  font-weight: bolder;
-  width: 60%;
+  font-family: Gill Sans, fantasy;
+  font-size: larger;
+  width: 100%;
   text-align: center;
   align-items: center;
 }
@@ -127,87 +129,207 @@ a:hover {
   text-align: center;
   align-items: center;
   align-content: center;
-  margin-left: 10%;
+  margin-left: 18%;
 }
 .red-hover {
+  padding: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background-color: white;
   border-radius: 10px;
   text-align: center;
+  width: 300px;
+  max-width: 300px;
+  height: 450px;
+  max-height: 450px;
 }
 .red-hover:hover {
   background-color: #f6e1e7;
 }
 .green-hover {
+  padding: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background-color: white;
   border-radius: 10px;
   text-align: center;
+  width: 300px;
+  max-width: 300px;
+  height: 450px;
+  max-height: 450px;
 }
 .green-hover:hover {
   background-color: #ecefdc;
 }
 .aqua-hover {
+  padding: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background-color: white;
   border-radius: 10px;
   text-align: center;
+  width: 300px;
+  max-width: 300px;
+  height: 450px;
+  max-height: 450px;
 }
 .aqua-hover:hover {
   background-color: #dce9e0;
 }
 .teal-hover {
+  padding: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background-color: white;
   border-radius: 10px;
   text-align: center;
+  width: 300px;
+  max-width: 300px;
+  height: 450px;
+  max-height: 450px;
 }
 .teal-hover:hover {
   background-color: #dcebec;
 }
 .blue-hover {
+  padding: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background-color: white;
   border-radius: 10px;
   text-align: center;
+  width: 300px;
+  max-width: 300px;
+  height: 450px;
+  max-height: 450px;
 }
 .blue-hover:hover {
   background-color: #dce8f0;
 }
 .explore-img {
-  background-image: url(/Images/Shared-Space-at-BDD.png);
-  text-align: center;
-  width: 100%;
+  background-color: rgb(0, 0, 0, 25%);
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-.hub-img{
-    background-image: url(/Images/parallax-light.jpg);
+.explore-card {
+  background-image: url(/Images/Shared-Space-at-BDD.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
   text-align: center;
   width: 100%;
+  color: white;
+}
+
+.hub-card {
+  background-image: url(/Images/parallax-light.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  width: 100%;
+  height: 350px;
+  max-height: 350px;
+  color: #212121;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  padding-top: 20px;
+}
+.hub-logo {
+  width: 70px;
+  height: 70px;
 }
 .bg-img {
   width: 90%;
 }
-.item{
-    height: 20%;
-    align-content: center;
+.foundation {
+  height: 80px;
+  width: 140px;
 }
-.foot{
-    color: white;
-    text-indent: 20px;
-    width: fit-content;
+.foundation_sub {
+  height: 80px;
+  width: 80px;
 }
-.scroll{
-    display: inline-flex;
-  background-color: rgb(0, 0, 0,10%);
+.item-color {
+  background: linear-gradient(
+    90deg,
+    rgba(117, 125, 175, 1) 40%,
+    rgba(97, 175, 189, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
+.item {
+  height: 20%;
+  align-content: center;
+}
+.blue-gradient {
+  font-size: 40px;
+  font-weight: 200;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #32aece;
+}
+.pink-gradient {
+  font-size: 40px;
+  font-weight: 200;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #e13870;
+}
+.dark-blue-gradient {
+  font-size: 40px;
+  font-weight: 200;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #007bc3;
+}
+.green-gradient {
+  font-size: 40px;
+  font-weight: 200;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #3a8547;
+}
+.foot {
+  color: white;
+  text-indent: 20px;
+  width: fit-content;
+}
+.scroll {
+  display: inline-flex;
+  background-color: rgb(0, 0, 0, 10%);
   position: fixed;
   padding: 10px;
   margin-top: 0%;
   width: 100%;
 }
+.icons{
+    color: white;
+}
+icons:hover{
+    color: #007bc3;
+}
 .off-white {
   background-color: #f5f5f5;
   width: 100%;
+  padding-top: 20px;
 }
 .white {
   background-color: #ffff;
   width: 100%;
+  padding-top: 20px;
 }
 .black {
   color: black;
 }
 .dark {
   background-color: #212121;
-  align-content: right; 
+  align-content: right;
+}
+.black-text {
+  color: black;
+  padding: 20px;
 }
 .gray-text {
   color: #646464;
@@ -221,11 +343,11 @@ a:hover {
 .float-child {
   display: flex;
   width: 99%;
-  padding: 5px;;
+  padding: 5px;
   flex-direction: row;
   align-items: center;
 }
-.flex-space-around {    
+.flex-space-around {
   justify-content: space-around;
 }
 .flex-space-evenly {
@@ -237,11 +359,19 @@ a:hover {
 .flex-start {
   justify-content: start;
 }
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
-.padding-4l{
-    padding-left: 20px;
+.centered {
+  text-align: center;
 }
-
-
+.center {
+  margin-top: 5%;
+}
+.max-height {
+  height: 270px;
+  max-height: 270px;
+}
+.padding-4l {
+  padding-left: 20px;
+}
