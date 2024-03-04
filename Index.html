@@ -19,10 +19,39 @@
       <nav class="float-countainer">
         <div><img src="./Images/logo-light.png" class="logo" /></div>
         <div class="flex-end nav-buttons">
-          <button class="nav-button"><a href="#">Discover BDD</a></button>
-          <button class="nav-button">
-            <a href="#">Our Products and Services</a>
-          </button>
+          <div class="dropdown">
+            <button class="nav-button">
+              <a href="#"
+                >Discover BDD <i class="fa-solid fa-caret-down"></i
+              ></a>
+              <div class="dropdown-content">
+                <ul>
+                  <li><a href="#" class="nav-links">Our Winning Formula</a></li>
+                  <li><a href="#" class="nav-links">Social Well Being</a></li>
+                  <li><a href="#" class="nav-links">Our Story</a></li>
+                  <li><a href="#" class="nav-links">Community Members</a></li>
+                  <li><a href="#" class="nav-links">Partners</a></li>
+                  <li><a href="#" class="nav-links">Testimonials</a></li>
+                </ul>
+              </div>
+            </button>
+          </div>
+          <div class="dropdown">
+            <button class="nav-button">
+              <a href="#"
+                >Our Products and Services <i class="fa-solid fa-caret-down"></i
+              ></a>
+            </button>
+            <div class="dropdown-content">
+              <ul>
+                <li><a href="#" class="nav-links">Private Offices</a></li>
+                <li><a href="#" class="nav-links">Co-Working Space</a></li>
+                <li><a href="#" class="nav-links">Meeting & Event Spaces</a></li>
+                <li><a href="#" class="nav-links">Board Rooms</a></li>
+                <li><a href="#" class="nav-links">Virtual Offices</a></li>
+              </ul>
+            </div>
+          </div>
           <button class="nav-button"><a href="#">BDD Academy</a></button>
           <button class="nav-button"><a href="#">Blog</a></button>
           <button class="nav-button"><a href="#">Career Portal</a></button>
@@ -100,16 +129,17 @@
     </div>
     <div class="explore-card">
       <div class="explore-img">
-      <div><h2>EXPLORE THE VISION</h2></div>
-      <iframe
-        width="420"
-        height="315"
-        src="https://www.youtube.com/watch?v=SmSJ3RpScxU"
-      >
-      </iframe></div>
+        <div><h2>EXPLORE THE VISION</h2></div>
+        <iframe
+          width="420"
+          height="315"
+          src="https://www.youtube.com/watch?v=SmSJ3RpScxU"
+        >
+        </iframe>
+      </div>
     </div>
     <div class="float-countainer white">
-      <div class="black-text"><h2 >Join our Community</h2></div>
+      <div class="black-text"><h2>Join our Community</h2></div>
       <div class="float-child flex-space-evenly">
         <div><img src="./Images/join-bdd-1-768x626.png" class="bg-img" /></div>
         <div class="float-child flex-space-evenly">
@@ -138,7 +168,6 @@
           <div class="card">
             <div class="card-body max-height">
               <div class="card-header">VIRTUAL OFFICES</div>
-
               <ul>
                 <li>
                   <i class="fa-solid fa-play item-color"></i> Business Address
@@ -160,7 +189,6 @@
           <div class="card">
             <div class="card-body max-height">
               <div class="card-header">MEETING & EVENT SPACES</div>
-
               <ul>
                 <li>
                   <i class="fa-solid fa-play item-color"></i> Four fully
@@ -185,7 +213,6 @@
           <div class="card">
             <div class="card-body max-height">
               <div class="card-header">MEMBERSHIP PLANS TO OUR HOT DESKS</div>
-
               <ul>
                 <li>
                   <i class="fa-solid fa-play item-color"></i> Day and weekly
@@ -212,13 +239,20 @@
           </div>
         </div>
       </div>
+      <div class="centered">
+        <h3 class="black-text">
+          Download the BDD app for instant bookings & exclusive discounts
+        </h3>
+        <img src="Images/app-store.png " class="store" />
+        <img src="Images/google-play.png " class="store" />
+      </div>
     </div>
     <div class="float-countainer hub-card">
       <h2>BDD IS THE PREFERRED HUB FOR:</h2>
       <div class="float-child flex-space-around center">
         <div class="hub-text">
           <img src="/Images/home_community.png" class="hub-logo" />
-          <div class ="blue-gradient" id="community">0</div>
+          <div class="blue-gradient" id="community">0</div>
           <h4>COMMUNITY MEMBERS</h4>
         </div>
         <div class="hub-text">
@@ -253,31 +287,31 @@
               <div class="item">
                 <h4>Discover BDD</h4>
                 <div class="foot">
-                  <h5><a href="#">Our Winning Formula</a></h5>
-                  <h5><a href="#">Social Well Being</a></h5>
-                  <h5><a href="#">Our Story</a></h5>
-                  <h5><a href="#">Community Members</a></h5>
-                  <h5><a href="#">Partners</a></h5>
+                  <h5><a href="#" class="links">Our Winning Formula</a></h5>
+                  <h5><a href="#" class="links">Social Well Being</a></h5>
+                  <h5><a href="#" class="links">Our Story</a></h5>
+                  <h5><a href="#" class="links">Community Members</a></h5>
+                  <h5><a href="#" class="links">Partners</a></h5>
                 </div>
               </div>
               <div class="item">
-                <h3>Our Products & Services</h3>
+                <h4>Our Products & Services</h4>
                 <div class="foot">
-                  <h5><a href="#">Private Offices</a></h5>
-                  <h5><a href="#">Co-Working Spaces</a></h5>
-                  <h5><a href="#">Meeting & Event Spaces</a></h5>
-                  <h5><a href="#">Board Rooms</a></h5>
-                  <h5><a href="#">Virtual Offices</a></h5>
+                  <h5><a href="#" class="links">Private Offices</a></h5>
+                  <h5><a href="#" class="links">Co-Working Spaces</a></h5>
+                  <h5><a href="#" class="links">Meeting & Event Spaces</a></h5>
+                  <h5><a href="#" class="links">Board Rooms</a></h5>
+                  <h5><a href="#" class="links">Virtual Offices</a></h5>
                 </div>
               </div>
               <div class="item">
                 <h4>Other pages</h4>
                 <div class="foot">
-                  <h5><a href="#">Blog</a></h5>
-                  <h5><a href="#">BDD Academy</a></h5>
-                  <h5><a href="#">Work with us</a></h5>
-                  <h5><a href="#">Get in Touch</a></h5>
-                  <h5><a href="#"> </a></h5>
+                  <h5><a href="#" class="links">Blog</a></h5>
+                  <h5><a href="#" class="links">BDD Academy</a></h5>
+                  <h5><a href="#" class="links">Work with us</a></h5>
+                  <h5><a href="#" class="links">Get in Touch</a></h5>
+                  <h5><a href="#" class="links"> </a></h5>
                 </div>
               </div>
             </div>
@@ -285,7 +319,16 @@
           <div class="light-gray-text">
             <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
             <div class="gray-text">
-              <h4>Our Winning Formula</h4>
+              <h4 class="contact">
+                <i class="fa-regular fa-envelope blue"></i
+                >@beirutdigitaldistrict.com
+              </h4>
+              <h4 class="contact">
+                <i class="fa-solid fa-phone blue"></i> +961 1 66 09 41
+              </h4>
+              <h4>Download our mobile app</h4>
+              <img src="Images/app-store.png " class="store" />
+              <img src="Images/google-play.png " class="store" />
               <h4>Social Well Being</h4>
             </div>
             <div class="float-countainer">
@@ -293,9 +336,10 @@
             </div>
             <div class="float-countainer">
               <div class="float-child flex-end">
-                <i class="fa-brands fa-facebook-f icon"></i>
-                <i></i>
-                <i></i>
+                <a href="#"> <i class="fa-brands fa-facebook-f icons"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram icons"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter icons"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in icons"></i></a>
               </div>
             </div>
           </div>
